@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Postman</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/ambiance.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-codemirror/0.3.0/ui-codemirror.js"></script>
+ <link rel="stylesheet" type="text/css" href="http://codemirror.net/lib/codemirror.css" />
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/ambiance.css"></script>
+</head>
+
+<body ng-controller="postmantest">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="search-form">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="dropdown btn-group" role="group"><button class="btn btn-dark dropdown-toggle border-url" data-toggle="dropdown" aria-expanded="false" type="button">{{method_x}}</button>
+                                <div class="dropdown-menu dropdown-menu-left" role="menu"><a class="dropdown-item" role="presentation" href="#" ng-repeat="x in options" ng-click="selectMethod(x)">{{x}}</a></div>
+                            </div>
+                        </div><input class="form-control border-url" type="text" id="url" href="#" placeholder="Enter resquest URL">
+                        <div class="input-group-append"><button class="btn btn-dark border-url" type="button" ng-click="send_data()">Send</button></div>
+                    </div>
+                </form><div class="container-fluit">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Params</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Body</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="settings" role="tab" data-toggle="tab">Raw </a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane  in active" id="Section1">
+                        <table class="table mt-3 ">
+                          <thead>
+                          <tbody>
+                            <tr class="cont">
+                              <th scope="col">key </th>
+                              <th scope="col">value</th>
+                              <th scope="col">description</th>
+                            </tr>
+                        
+                              <td>
+                                <div class="field">
+                                  <input class="form-control cls-btn-body " id="input" type="text" placeholder="new key "
+                                    id="float-input" name="float-input">
+                                </div>
+                          
+                            </td>
+                            <td>
+                             
+                                <div class="field">
+                                  <input class="form-control cls-btn-body" id="input" type="text" placeholder=" values"
+                                    id="float-input" name="float-input">
+                                </div>
+                             
+                            </td>
+                            <td>
+
+                             
+                                <div class="field">
+                                  <input class="form-control cls-btn-body " id="input" type="text" placeholder=" description"
+                                    id="float-input" name="float-input">
+                                </div>
+                             
+
+                            </td>
+
+                          </tbody>
+                        </table>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Section 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </p>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Section 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                <div class="container-fluit mt-2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div ui-codemirror="cmOption" ng-model="cmModel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/codemirror.js"></script>
+    <script src="assets/js/controller.js"></script>
+</body>
+
+</html>
