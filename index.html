@@ -30,7 +30,7 @@
                             <div class="dropdown btn-group" role="group"><button class="btn btn-dark dropdown-toggle border-url" data-toggle="dropdown" aria-expanded="false" type="button">{{method_x}}</button>
                                 <div class="dropdown-menu dropdown-menu-left" role="menu"><a class="dropdown-item" role="presentation" href="#" ng-repeat="x in options" ng-click="selectMethod(x)">{{x}}</a></div>
                             </div>
-                        </div><input class="form-control border-url" type="text" id="url" href="#" placeholder="Enter resquest URL">
+                        </div><input class="form-control border-url" type="text" id="url" href="#" placeholder="Enter resquest URL" autocomplete="off">
                         <div class="input-group-append"><button class="btn btn-dark border-url" type="button" ng-click="send_data()">Send</button></div>
                     </div>
                 </form><div class="container-fluit">
@@ -53,6 +53,37 @@
                               <th scope="col">key </th>
                               <th scope="col">value</th>
                               <th scope="col">description</th>
+                            </tr>                        
+                              <td>
+                                <div class="field">
+                                  <input class="form-control cls-btn-body " id="input" type="text" placeholder="new key "
+                                    id="float-input" name="float-input" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>     
+                                <div class="field">
+                                  <input class="form-control cls-btn-body" id="input" type="text" placeholder=" values"
+                                    id="float-input" name="float-input" autocomplete="off">
+                               </div>                            
+                            </td>
+                            <td>                             
+                                <div class="field">
+                                  <input class="form-control cls-btn-body " id="input" type="text" placeholder=" description"
+                                    id="float-input" name="float-input" autocomplete="off">
+                                </div>     
+                           </td>
+                          </tbody>
+                        </table>
+                    </div>
+ 
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                         <table class="table mt-3 ">
+                          <thead>
+                          <tbody>
+                            <tr class="cont">
+                              <th scope="col">key </th>
+                              <th scope="col">value</th>
+                              <th scope="col">description</th>
                             </tr>
                         
                               <td>
@@ -62,33 +93,21 @@
                                 </div>
                           
                             </td>
-                            <td>
-                             
+                            <td>                         
                                 <div class="field">
                                   <input class="form-control cls-btn-body" id="input" type="text" placeholder=" values"
                                     id="float-input" name="float-input">
-                                </div>
-                             
+                              </div>                          
                             </td>
-                            <td>
-
-                             
+                            <td>                            
                                 <div class="field">
                                   <input class="form-control cls-btn-body " id="input" type="text" placeholder=" description"
                                     id="float-input" name="float-input">
-                                </div>
-                             
-
+                             </div>
                             </td>
 
                           </tbody>
-                        </table>
-                    </div>
- 
-                    <div role="tabpanel" class="tab-pane fade" id="Section2">
-                        <h3>Section 2</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium, metus et scelerisque dignissim, ligula est imperdiet nisl, sit amet malesuada nunc felis in nisi. Nullam dapibus ligula dui, in rhoncus purus euismod nec. Duis in lacinia neque. Etiam tellus.
+                        </table>ue. Etiam tellus.
                         </p>
                     </div>
  
